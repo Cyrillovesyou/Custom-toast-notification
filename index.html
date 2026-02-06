@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Toast Notification</title>
+</head>
+<link rel="stylesheet" href="style.css"></link>
+<body>
+  <div class="main-container">
+    <h2>Custom Toast Notification</h2>
+      <div class="row">
+        <button onclick="showToast('Saved successfully' , 'success')" style="background-color: #28a745;">
+          Success
+        </button>
+           <button onclick="showToast('There was an error' , 'error')" style="background-color: #dc3545;">
+          Error
+        </button>
+           <button onclick="showToast('You will be updated ' , 'info')" style="background-color: #007bff;">
+          Info
+        </button>
+      </div>
+
+      <div class="toast-container" id="toast-container"></div>
+
+  </div>
+  
+</body>
+<script src="script.js" defer></script>
+</html>
